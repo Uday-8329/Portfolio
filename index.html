@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    
+   
+    <nav>
+      <!-- Fixed Navigation Bar -->
+<nav class="navbar">
+  <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      
+  </ul>
+
+    <!-- Add the download CV button -->
+<div class="download-cv">
+  <a href="assets/cv.pdf" download="Uday's CV">
+      <button class="cv-btn">Download CV</button>
+  </a>
+</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1 class="hero-title">Hi, I'm <span> UDAY KIRAN</span></h1>
+    <p class="hero-description">I am a budding full-stack developer and data analyst, passionate about crafting dynamic web applications and uncovering insights from data. With expertise in both front-end and back-end development, and a strong foundation in data analysis, I aim to deliver innovative, user-centric solutions and impactful projects.</p>
+    <a href="#projects" class="hero-btn">View My Work</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="assets/profile.jpg" alt="Profile Picture">
+      <p>I am a passionate Full Stack Developer and Data Analyst with a keen eye for creating efficient, user-friendly web applications and turning raw data into actionable insights. With expertise in modern frameworks, databases, and data visualization, I thrive at the intersection of development and analytics, delivering innovative solutions that bridge technology and business goals.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">Python</div>
+      <div class="skill">MongoDB</div>
+      <div class="skill">MERN Stack</div>
+      
+    </div>
+  </section>
+  <!----Education Section-->
+  <section id="education" class="education">
+    <h2 class="section-title">Education</h2>
+    <div class="education-container">
+  
+      <div class="education-item">
+        <h3>B.Tech in Computer Science (Data Science)</h3>
+        <p><strong>Malla Reddy College of Engineering</strong> - Pursuing (Graduation: 2026)</p>
+        <p>Specialization: Data Science, Machine Learning, and Full Stack Development</p>
+      </div>
+  
+      <div class="education-item">
+        <h3>Intermediate (12th Grade)</h3>
+        <p><strong>Narayana Junior College</strong> - Completed</p>
+        <p>Specialization: MPC (Math, Physics, Chemistry)</p>
+      </div>
+  
+      <div class="education-item">
+        <h3>10th Grade (SSC)</h3>
+        <p><strong>Narayana High School</strong> - Completed</p>
+      </div>
+  
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="assets/project1.jpg" alt="Project 1">
+        <h3>Student Management Portal</h3>
+        <p>A web-based solution for managing student data, performance, attendance, and academic processes efficiently.</p>
+        <div class="project-card">
+      </div>
+        <img src="assets/project2.JPG" alt="Project 2">
+        <h3>Movie Finder </h3>
+        <p>A Movie Finder web app lets users search, view details, and filter movies based on preferences.</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/project3.jpg" alt="Project 3">
+        <h3>Snake game</h3>
+        <p>A classic Snake game where players control a snake to eat food and grow longer.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formsubmit.co/vayalapaatiuday@gmail.com" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  
+  <!-- Optional fields -->
+  <input type="hidden" name="_subject" value="New Contact Request">
+  <input type="hidden" name="_captcha" value="true">
+  
+  <button type="submit">Send Message</button>
+</form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 Uday Kiran. All rights reserved.</p>
+  
+    <!-- Social Media Links -->
+    <div class="social-media">
+      <a href="https://github.com/Uday-8329" target="_blank" class="social-icon github" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+        <span class="tooltip">GitHub</span>
+      </a>
+      <a href="https://www.linkedin.com/in/uday-kiran-vayalapati-muni-98b31828b/" target="_blank" class="social-icon linkedin" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+        <span class="tooltip">LinkedIn</span>
+      </a>
+      <a href="https://x.com/uday_83290?s=21" target="_blank" class="social-icon twitter" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+        <span class="tooltip">Twitter</span>
+      </a>
+      <a href="https://www.instagram.com/uday._.8329?igsh=ZzlwZ2U2MzB0YnJ4&utm_source=qr" target="_blank" class="social-icon instagram" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+        <span class="tooltip">Instagram</span>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

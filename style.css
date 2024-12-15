@@ -1,0 +1,363 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    line-height: 1.6;
+    background-color: rgba(15, 14, 14, 0.942)
+  }
+
+ 
+  
+  
+  /* Base Style for Navbar */
+.navbar {
+    position: fixed; /* Fix it at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 60px; /* Adjust navbar height */
+    background-color: #333; /* Dark background */
+    display: flex; /* Flexbox for alignment */
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px; /* Spacing */
+    z-index: 1000; /* Stay above other content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+
+/* Style the unordered list in the navbar */
+.navbar ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Flexbox for inline menu items */
+    margin: 0; /* Reset margins */
+    padding: 0;
+    gap: 20px; /* Add space between links */
+}
+
+/* Style each link in the navbar */
+.navbar ul li a {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Standard text size */
+    font-weight: bold;
+    padding: 10px 15px; /* Add clickable area padding */
+    border-radius: 4px; /* Slightly rounded edges */
+    transition: background 0.3s, transform 0.3s; /* Hover effect */
+}
+
+/* Hover effect on nav links */
+.navbar ul li a:hover {
+    background-color: #4caf50; /* Highlight green on hover */
+    color: white; /* Maintain text color */
+    transform: scale(1.1); /* Slight grow effect */
+}
+
+/* Responsive design: Adjust navbar layout for smaller screens */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Stack menu items */
+        gap: 15px; /* Adjust gap */
+        text-align: center; /* Center-align the stacked items */
+    }
+
+    .navbar {
+        height: auto; /* Allow height to adjust */
+        padding: 10px 0; /* Extra spacing for small screens */
+    }
+
+    .navbar ul li a {
+        font-size: 14px; /* Slightly smaller font */
+    }
+}
+
+/* Ensure body content is visible under fixed navbar */
+body {
+    margin-top: 60px; /* Push body content below the navbar */
+}
+  
+  .nav-links {
+    list-style: none;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    flex-wrap: wrap;
+    margin: 0 10px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  /* Style for the CV button */
+.download-cv {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.cv-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #ff6600; /* Green button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+.cv-btn:hover {
+  background-color: #e4800d;
+  transform: scale(1.05);
+}
+  
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/back.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
+  
+  .hero-title span {
+    color: #ff6600;
+  }
+  
+  .hero-btn {
+    margin-top: 1rem;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+  }
+  
+  .hero-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Sections */
+  section {
+    padding: 3rem 2rem;
+  }
+  
+  section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* About Section */
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .about-content img {
+    width: 150px;
+    border-radius: 50%;
+  }
+  
+  .about-content p {
+    font-size: 18px;
+  }
+  
+  /* Skills Section */
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .skill {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+  /* Education Section */
+.education {
+    padding: 60px 20px;
+    background-color: rgba(0, 0, 0, 0.592);
+  }
+  
+  .education .section-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  .education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .education-item {
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .education-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .education-item h3 {
+    font-size: 1.5em;
+    color: #ff6600;
+    margin-bottom: 10px;
+  }
+  
+  .education-item p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  /* Projects Section */
+  .project-grid {
+    
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+  }
+  
+  .project-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .project-card h3 {
+    margin: 10px 0 5px;
+  }
+  
+  /* Contact Section */
+  form input, form textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #555;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+  }
+  /* Social Media Section */
+.social-media {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icon {
+    position: relative;
+    color: #fff;
+    background-color: #333;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .social-icon:hover {
+    background-color: #ff6600;
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Tooltip */
+  .social-icon .tooltip {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #222;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .social-icon:hover .tooltip {
+    opacity: 1;
+    transform: translate(-50%, -10px);
+  }
+  
+  /* Icon Animations */
+  .social-icon i {
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
